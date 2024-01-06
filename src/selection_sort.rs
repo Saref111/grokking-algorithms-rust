@@ -44,7 +44,7 @@ mod test {
     #[test]
     fn test_selection_sort_3() {
         let mut arr = [8, 7, 6, 5, 4, 3, 2, 1];
-        let result = selection_sort_1(&mut arr);
+        let result = selection_sort_2(&mut arr);
         assert_eq!(result, [1, 2, 3, 4, 5, 6, 7, 8]);
     }
 }
