@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 mod binary_search;
 mod selection_sort;
 mod recursion_stack;
