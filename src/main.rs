@@ -1,3 +1,5 @@
+use crate::hash_table::NaiveHashTable;
+
 #[allow(dead_code)]
 mod binary_search;
 mod selection_sort;
@@ -6,5 +8,5 @@ mod divide_and_conquer;
 mod quick_sort;
 mod hash_table;
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, world!");   
 }

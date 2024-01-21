@@ -4,12 +4,12 @@ type HashFunc = fn (&str) -> u64;
 pub enum HashTableError {
     Collision(String),
 }
-pub struct NaiveHashTable<T: Default + Copy> {
+pub struct NaiveHashTable<T: Copy> {
     arr: Vec<Option<T>>,
     hash_function: HashFunc,
 }
 
-impl<T: Default + Copy> NaiveHashTable<T> {
+impl<T: Copy> NaiveHashTable<T> {
     pub fn new(hash_function: HashFunc) -> Self {
         Self {hash_function, arr: vec![]}
     }
